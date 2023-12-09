@@ -1,0 +1,36 @@
+.hero {
+  height: 90vh;
+  width: 100%;
+  background-color: lightpink;
+  margin-inline: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.hero div:first-child {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+  gap: 32px;
+
+  & > h1 {
+    font-size: clamp(2rem, 0.75rem + 4vw, 3rem);
+  }
+
+  & > p {
+    font-size: clamp(1rem, 0.375rem + 2vw, 1.5rem);
+  }
+}
+
+.hero div:last-child {
+  display: flex;
+  align-items: left;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (max-width) {
+  .hero {
+    grid-template-columns: 1fr;
+  }
+}

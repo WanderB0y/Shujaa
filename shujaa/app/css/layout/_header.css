@@ -1,0 +1,23 @@
+header {
+  --max-width: 1280px;
+  --padding: 1rem;
+
+  display: flex;
+  align-items: center;
+  margin-inline: auto;
+  height: 80px;
+
+  justify-content: space-between;
+  width: min(var(--max-width), 100% - var(--padding));
+  font-size: 18px;
+}
+
+.header--nav > ul {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.header--buttons a:first-child {
+  margin-right: 16px;
+}

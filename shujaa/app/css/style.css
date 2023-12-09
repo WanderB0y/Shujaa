@@ -1,0 +1,80 @@
+@import url("./layout/_header.css");
+@import url("./layout/_main.css");
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+  line-height: 1.1;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+li,
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+.primary--btn {
+  background-color: #623cea;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 8px;
+  max-width: fit-content;
+}
+.container {
+  --maxwidth: 1280px;
+  --padding: 1rem;
+
+  width: min(var(--maxwidth), 100% - var(--padding));
+}
